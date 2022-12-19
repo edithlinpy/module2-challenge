@@ -1,0 +1,37 @@
+#outerDiv
+{
+    width: 200px;
+    height: 180px;
+    border:3px #F02020 solid;
+    position:relative;
+    background-image: url("../images/02-portfolio-1.jpg");
+}
+
+.bgcolor {
+    /*background-color:rgba(0, 0, 0, 0.7);*/
+    border: 3px solid green;
+    width: 200px;
+    height: 180px;
+}
+
+#outerDiv a {
+  display: inline-block;   
+  width:inherit;
+  height:inherit;
+  background-color:rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+#bottomRight
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;    
+}
+
+.watermark 
+{
+    opacity: 0.5;
+    color: BLACK;
+    padding-right: 2px;
+}

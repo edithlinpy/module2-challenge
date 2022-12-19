@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -14,30 +14,75 @@
   <header>
     <h1>Lernantino</h1>
     <nav>
+      <a href="#about">About Me</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact Me</a>
+      <a href="#">Resume</a>      
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>Edith Lin's Portfolio</h2>
+      <img src="../images/profile1.webp">
     </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+    <section class="page-section" id="about"><a href="about"></a>
+      <h2>About<br>Me</h2>
+      <div>
+        <p>Web developer with over 10 years’ experience. Knowledgeable in user interface, development, testing, and debugging processes. Proficient in an assortment of technologies, including PHP, JavaScript, and MySQL. </p>
+        <p>A responsible, hard-working, stay at home mom eager to return to the workforce. I am now looking to secure a challenging new role where I can put previous experience gained to best use.</p>
+      </div>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
+    <section class="page-section" id="work"><a href="work"></a>
       <h2>Work</h2>
+      <div class="grid worklist">
+          <a href="#" class="gridArea surf-report">     
+            <div>
+              <h3>Surf Report</h3>
+              <h4>MERN Stack</h4>
+            </div>         
+          </a>
+        <a href="#" class="led-wall gridArea">
+          <div>
+            <h3>LED Wall</h3>
+            <h4>Node/loT</h4>
+          </div>
+        </a>
+        <a href="#" class="calculator gridArea">
+          <div>
+            <h3>calculator</h3>
+            <h4>React/JavaScript/CSS</h4>
+          </div>
+        </a>
+        <a href="#" class="pastel-puzzels gridArea">
+          <div>
+            <h3>Pastel Puzzels</h3>
+            <h4>MERN Stack</h4>
+          </div>
+        </a>
+        <a href="#" class="run-buddy gridArea">
+          <div>
+            <h3>Run Buddy</h3>
+            <h4>HTML/CSS</h4>
+          </div>
+        </a>
+      </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+    <section class="page-section contact" id="contact"><a href="contact"></a>
+      <h2>Contact<br>Me</h2>
+      <div>
+        <a href="mailto:edithlnpy@gmail.com">edithlnpy@gmail.com</a>
+        <a href="https://github.com/edithlinpy" target="_blank">GitHub</a>
+      </div>
     </section>
   </main>
 </body>
