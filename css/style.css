@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  height: 80px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  background-color: #404040;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+header h1 {
+  background-color: #71dada ;
+  font-size: 30px;
+  width: 300px;
+  height: 50px;
+  padding-right: 10px;
+  text-align: right;
+  color: #404040;
+}
+
+nav a {
+  padding: 5px;
+  font-size: 20px;
+  color:#71dada;
+  text-decoration: none;
+  border-bottom: 2px solid #71dada;
+}
+
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-banner div {
+  height: inherit;
+  width: inherit;
+  background-color: rgba(20, 69, 102, 0.7);
+}
+
+.hero-banner h2 {
+  background-color: #71dada;
+  padding: 10px;
+  width: 300px;
+  position: absolute; /* set the position to bottom right */
+  right: 80px;
+  bottom: 10px;   
+}
+
+.hero-banner img {
+  width: 120px;
+  height: 120px;
+  position: absolute; 
+  right: 30px;
+  bottom: 10px;  
+  border-radius: 50%; /* create a round image */
+}
+
+.page-section {
+  display: flex;
+  padding: 20px;
+}
+
+.page-section h2 {
+  border-right: 2px solid black;
+  padding-right: 10px;
+  text-align: right;
+  vertical-align: top;
+  font-size: 40px;
+  min-width: 200px;
+  color:darkcyan;
+}
+
+.page-section h2+div { 
+  margin-left: 20px;
+}
+
+/* Work section */
+
+#work {
+  display: flex;
+}
+
+/* text style on each image */
+.worklist div {
+  width:fit-content;
+  padding: 5px;
+  background-color: rgb(108, 194, 194);
+  color:#404040;
+  position: absolute;
+  bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 150px 150px;
+  grid-template-areas: 
+    "surf-report surf-report"
+    "led-wall calculator"
+    "pastel-puzzels run-buddy"
+  ;
+  width: 100%;
+}
+
+.gridArea {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  position: relative;
+  border: 5px solid rgb(108, 194, 194);
+  background-color: rgba(20, 69, 102, 0.7);
+  background-blend-mode: soft-light; /* background color effect */
+  transition: all 0.5s;
+}
+
+.gridArea:hover {
+  background-color: transparent;
+}
+
+h3 {
+  font-size: 700;
+}
+
+.surf-report {
+  background-image: url("../images/02-portfolio-4.jpg");
+  grid-area: surf-report;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.led-wall {
+  background-image: url("../images/02-portfolio-1.jpg");
+  grid-area: led-wall; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.calculator {
+  background-image: url("../images/02-portfolio-2.jpg");
+  grid-area: calculator;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pastel-puzzels {
+  background-image: url("../images/02-portfolio-3.jpg");
+  grid-area: pastel-puzzels;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.run-buddy {
+  background-image: url("../images/02-run-buddy.jpg");
+  grid-area: run-buddy;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Contact section */
+#contact div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#contact div a {
+  padding: 5px;
+  margin: 10px;
+  font-size: 20px;
+  color:grey;
+  text-decoration: none; /*remove the original underline */
+  border-bottom: 3px solid gray; 
+}
+
+/* make the page responsive */
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-areas: 
+      "surf-report"
+      "led-wall"
+      "calculator"
+      "pastel-puzzels"
+      "run-buddy"
+    ;
+  }
+}
